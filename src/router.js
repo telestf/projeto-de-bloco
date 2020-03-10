@@ -4,6 +4,9 @@ import Home from './components/Home';
 import Alunos from './components/Alunos';
 import Professores from './components/Professores';
 import Nucleos from './components/Nucleos';
+import AlunosId from './components/AlunosId';
+import ProfessoresId from './components/ProfessoresId';
+import NucleosId from './components/NucleosId';
 
 Vue.use(VueRouter);
 
@@ -33,17 +36,17 @@ export default new VueRouter({
         {
             path: '/alunos/:id',
             name: 'alunosId',
-            component: Alunos
+            component: AlunosId
         },
         {
             path: '/professores/:id',
             name: 'professoresId',
-            component: Professores
+            component: ProfessoresId
         },
         {
             path: '/nucleos/:id',
             name: 'nucleosId',
-            component: Nucleos
+            component: NucleosId
         }
     ]
 
