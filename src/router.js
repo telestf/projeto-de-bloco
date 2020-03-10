@@ -30,6 +30,21 @@ export default new VueRouter({
             name: 'nucleos',
             component: Nucleos
         },
+        {
+            path: '/alunos/:id',
+            name: 'alunosId',
+            component: Alunos
+        },
+        {
+            path: '/professores/:id',
+            name: 'professoresId',
+            component: Professores
+        },
+        {
+            path: '/nucleos/:id',
+            name: 'nucleosId',
+            component: Nucleos
+        }
     ]
 
 });
