@@ -2,7 +2,7 @@
   <div class="alunos">
     <h1>ALUNOS</h1>
     <b-list-group flush> 
-      <b-list-group-item button v-for="aluno in alunos" :key="aluno.id" to=alunosId>
+      <b-list-group-item button v-for="aluno in alunosOrdenados" :key="aluno.id" to=alunosId>
         {{ aluno.id }} - {{ aluno.nome }}
       </b-list-group-item>
     </b-list-group>
@@ -30,7 +30,7 @@ export default {
       ]
     }
   },
-  conputed: {
+  computed: {
     alunosOrdenados: function(){
       let alunosOrd = this.alunos
       alunosOrd.sort(function (a, b) {
