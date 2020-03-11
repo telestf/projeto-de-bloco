@@ -2,7 +2,7 @@
   <div class="alunos">
     <h1>ALUNOS</h1>
     <b-list-group flush> 
-      <b-list-group-item button v-for="aluno in alunosOrdenados" :key="aluno.id" to=alunosId>
+      <b-list-group-item button v-for="aluno in alunosOrdenados" :key="aluno.id">
         {{ aluno.id }} - {{ aluno.nome }}
       </b-list-group-item>
     </b-list-group>
@@ -16,15 +16,15 @@ export default {
     return {
       alunos: [
         {
-          id: 1,
+          "id": 1,
           nome: "Amanda"
         },
         {
-          id: 2,
+          "id": 2,
           nome: "Jéssica"
         },
         {
-          id: 3, 
+          "id": 3, 
           nome: "Beatriz"
         }
       ]

@@ -3,7 +3,7 @@
 
     <b-navbar type="dark" variant="dark">
       <b-navbar-nav>
-        <b-nav-item to=home>Home</b-nav-item>
+        <b-nav-item to='/'>Home</b-nav-item>
         <b-nav-item to=professores>Professores</b-nav-item>
         <b-nav-item to=alunos>Alunos</b-nav-item>
         <b-nav-item to=nucleos>Núcleos</b-nav-item>        
