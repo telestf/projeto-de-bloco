@@ -4,8 +4,14 @@ import Home from './components/Home';
 import Alunos from './components/Alunos';
 import Professores from './components/Professores';
 import Nucleos from './components/Nucleos';
+<<<<<<< HEAD
 import DetalharAlunos from './components/DetalharAlunos';
 import EditarAluno from './components/EditarAluno';
+=======
+import AlunosId from './components/AlunosId';
+import ProfessoresId from './components/ProfessoresId';
+import NucleosId from './components/NucleosId';
+>>>>>>> 901d84ae9132e3ac6106a99a13040907af338fc0
 
 Vue.use(VueRouter);
 
@@ -34,6 +40,7 @@ export default new VueRouter({
         },
         {
             path: '/alunos/:id',
+<<<<<<< HEAD
             name: 'detalharAlunos',
             component: DetalharAlunos,
             children: [
@@ -43,6 +50,20 @@ export default new VueRouter({
                     component: EditarAluno
                 }
             ]
+=======
+            name: 'alunosId',
+            component: AlunosId
+        },
+        {
+            path: '/professores/:id',
+            name: 'professoresId',
+            component: ProfessoresId
+        },
+        {
+            path: '/nucleos/:id',
+            name: 'nucleosId',
+            component: NucleosId
+>>>>>>> 901d84ae9132e3ac6106a99a13040907af338fc0
         }
     ]
 
