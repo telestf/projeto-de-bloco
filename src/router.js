@@ -4,6 +4,8 @@ import Home from './components/Home';
 import Alunos from './components/Alunos';
 import Professores from './components/Professores';
 import Nucleos from './components/Nucleos';
+import DetalharAlunos from './components/DetalharAlunos';
+import EditarAluno from './components/EditarAluno';
 
 Vue.use(VueRouter);
 
@@ -32,18 +34,15 @@ export default new VueRouter({
         },
         {
             path: '/alunos/:id',
-            name: 'alunosId',
-            component: Alunos
-        },
-        {
-            path: '/professores/:id',
-            name: 'professoresId',
-            component: Professores
-        },
-        {
-            path: '/nucleos/:id',
-            name: 'nucleosId',
-            component: Nucleos
+            name: 'detalharAlunos',
+            component: DetalharAlunos,
+            children: [
+                {
+                    path: 'edit',
+                    name: 'edit-aluno',
+                    component: EditarAluno
+                }
+            ]
         }
     ]
 

@@ -1,0 +1,68 @@
+{
+  "alunos": [
+    {
+      "id": "1",
+      "nome": "Amanda Ribeiro Chagas",
+      "responsavel": "Ronaldo Almeida Chagas",
+      "endereco": {
+        "rua": "Rua Abigail",
+        "numero": "17",
+        "complemento": "Casa 2"
+        },
+      "email": "rachagas@gmail.com",
+      "telefone": {
+        "numero": "2198877654",
+        "tipo": "Celular"
+      },
+      "mensalidadePaga": true
+    },
+    {
+      "id": "2",
+      "nome": "Arlene Mullins",
+      "responsavel": "Lucille Villanueva",
+      "endereco": {
+        "rua": "Avenida Ramsay Leas",
+        "numero": "1983",
+        "complemento": "Apto 202"
+      },
+      "email": "retoh@sbcglobal.net",
+      "telefone": {
+        "numero": "2199037800",
+        "tipo": "Celular"
+      },
+      "mensalidadePaga": true
+    },
+    {
+      "id": "3",
+      "nome": "Abel Sanford",
+      "responsavel": "Sulaiman Nava",
+      "endereco": {
+        "rua": "Travessa Highgate Esplanade",
+        "numero": "2",
+        "complemento": "Sobrado"
+      },
+      "email": "jshirley@live.com",
+      "telefone": {
+        "numero": "2197382761",
+        "tipo": "Celular"
+      },
+      "mensalidadePaga": true
+    },
+    {
+      "id": "4",
+      "nome": "Jillian Jensen",
+      "responsavel": "Charlton Zimmerman",
+      "endereco": {
+        "rua": "Rua Fenten Close",
+        "numero": "121",
+        "complemento": "Apto 101"
+      },
+      "email": "wikinerd@yahoo.ca",
+      "telefone": {
+        "numero": "2198743625",
+        "tipo": "Celular"
+      },
+      "mensalidadePaga": false
+    }
+  ]
+}
