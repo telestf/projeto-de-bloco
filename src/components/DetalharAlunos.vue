@@ -17,6 +17,7 @@
       <b-card-text><strong>Número:</strong> {{ alunoById(id).telefone.numero }}</b-card-text>
       <b-card-text><strong>Tipo:</strong> {{ alunoById(id).telefone.tipo }}</b-card-text>
       <b-card-text><strong>Mensalidade:</strong> {{ alunoById(id).mensalidadePaga ? "Paga" : "Não Paga" }}</b-card-text>
+      <b-card-text><strong>Comentários:</strong> {{ alunoById(id).comentarios }}</b-card-text>
 
       <b-button @click="editar">Editar Informações</b-button>
 

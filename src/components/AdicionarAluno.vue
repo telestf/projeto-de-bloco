@@ -35,15 +35,29 @@
         </b-form-group>
 
         <b-form-group required label="Tipo do telefone:">
-          <b-form-radio v-model="aluno_novo.telefone.tipo" value="Celular">Celular</b-form-radio>
-          <b-form-radio v-model="aluno_novo.telefone.tipo" value="Residencial">Residencial</b-form-radio>
-          <b-form-radio v-model="aluno_novo.telefone.tipo" value="Comercial">Comercial</b-form-radio>
+          <b-form-radio v-model="aluno_novo.telefone.tipo" value="Celular"><strong>Celular</strong></b-form-radio>
+          <b-form-radio v-model="aluno_novo.telefone.tipo" value="Residencial"><strong>Residencial</strong></b-form-radio>
+          <b-form-radio v-model="aluno_novo.telefone.tipo" value="Comercial"><strong>Comercial</strong></b-form-radio>
         </b-form-group>
-
-        <b-form-checkbox v-model="aluno_novo.mensalidadePaga">
-          Mensalidade Paga
-        </b-form-checkbox>
         
+        <b-form-checkbox v-model="aluno_novo.mensalidadePaga">
+          <strong>Mensalidade Paga</strong>
+        </b-form-checkbox>
+
+
+        <b-row class="mt-2">
+          <b-col sm="2">
+            <label for="textarea"><strong>Comentários:</strong></label>
+          </b-col>
+          <b-col sm="10">
+            <b-form-textarea
+              id="textarea"
+              v-model="aluno_novo.comentarios"              
+              placeholder="Informações adicionais"
+            ></b-form-textarea>
+          </b-col>
+        </b-row>
+
         <b-button type="submit" variant="primary">Submit</b-button>
 
       </b-form>
@@ -88,5 +102,7 @@ export default {
 </script>
 
 <style>
-
+legend {
+  font-weight: bold;
+}
 </style>

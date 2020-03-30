@@ -14,7 +14,8 @@
         "numero": "2198877654",
         "tipo": "Celular"
       },
-      "mensalidadePaga": true
+      "mensalidadePaga": true,
+      "comentarios": "Comentários 1"
     },
     {
       "id": "2",
@@ -30,7 +31,8 @@
         "numero": "2199037800",
         "tipo": "Celular"
       },
-      "mensalidadePaga": true
+      "mensalidadePaga": true,
+      "comentarios": "Comentários 2"
     },
     {
       "id": "3",
@@ -46,7 +48,8 @@
         "numero": "2197382761",
         "tipo": "Celular"
       },
-      "mensalidadePaga": true
+      "mensalidadePaga": true,
+      "comentarios": "Comentários 3"
     },
     {
       "id": "4",
@@ -62,7 +65,8 @@
         "numero": "2198743625",
         "tipo": "Celular"
       },
-      "mensalidadePaga": false
+      "mensalidadePaga": false,
+      "comentarios": "Comentários 4"
     }
   ]
 }
