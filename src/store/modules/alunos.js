@@ -21,8 +21,14 @@ const actions = {
     })
   },
   adicionarAluno({ commit }, aluno_novo) {
-    const ultima_posicao = state.alunos[state.alunos.length -1]
-    const novo_id = parseInt(ultima_posicao.id)+1
+    var ultima_posicao = 0;
+    var novo_id = 1;
+
+    if(state.alunos.length !== 0) {
+      ultima_posicao = state.alunos[state.alunos.length -1]
+      novo_id = parseInt(ultima_posicao.id)+1
+    }
+    
     const response = {
       "id": novo_id,
       "nome": aluno_novo.nome,
@@ -37,7 +43,8 @@ const actions = {
         "numero": aluno_novo.telefone.numero,
         "tipo": aluno_novo.telefone.tipo
       },
-      "mensalidadePaga": aluno_novo.mensalidadePaga
+      "mensalidadePaga": aluno_novo.mensalidadePaga,
+      "comentarios": aluno_novo.comentarios
     }
     commit("novoAluno", response);
   },
