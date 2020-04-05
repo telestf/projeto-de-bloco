@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Home'
 
 }
 </script>
@@ -14,4 +14,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.home {
+  background-image: url('https://cultura.culturamix.com/blog/wp-content/gallery/academias-de-ballet-1/Academias-de-Ballet-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 </style>

@@ -2,10 +2,10 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from './components/Home';
 import Alunos from './components/Alunos';
-import Professores from './components/Professores';
-import Nucleos from './components/Nucleos';
+import Videos from './components/Videos';
 import DetalharAlunos from './components/DetalharAlunos';
 import EditarAluno from './components/EditarAluno';
+import Login from './components/Login';
 
 Vue.use(VueRouter);
 
@@ -23,14 +23,9 @@ export default new VueRouter({
             component: Alunos
         },
         {
-            path: '/professores',
-            name: 'professores',
-            component: Professores
-        },
-        {
-            path: '/nucleos',
-            name: 'nucleos',
-            component: Nucleos
+            path: '/videos',
+            name: 'videos',
+            component: Videos
         },
         {
             path: '/alunos/:id',
@@ -43,6 +38,11 @@ export default new VueRouter({
                     component: EditarAluno
                 }
             ]
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login
         }
     ]
 
